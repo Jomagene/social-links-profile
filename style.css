@@ -7,7 +7,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
   font-family: "Inter";
   src: url("../static/Inter-Semibold.ttf") format("truetype");
@@ -15,27 +14,26 @@
   font-style: normal;
 }
 
+/* SOme variables */
+
+:root {
+  --small-font: 14px;
+  --large-font: 24px;
+  --regular: 400;
+  --bold: 600;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-.flex {
-  display: flex;
-}
-.flex-center {
-  align-items: center;
-  justify-content: center;
-}
-.column {
-  flex-direction: column;
 }
 body {
   background-color: hsl(0, 0%, 8%);
   height: 100vh;
   color: white;
   font-family: "Inter", sans-serif;
-  font-weight: 400;
+  font-weight: var(--regular);
 }
 
 main {
@@ -60,12 +58,12 @@ img {
   gap: 10px;
 }
 h1 {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: var(--large-font);
+  font-weight: var(--bold);
 }
 .location {
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--small-font);
+  font-weight: var(--bold);
   color: hsl(75, 94%, 57%);
 }
 .link-container {
@@ -73,7 +71,7 @@ h1 {
   gap: 27px;
 }
 .link-container p {
-  font-size: 14px;
+  font-size: var(--small-font);
   color: rgb(208, 208, 208);
 }
 ul {
@@ -86,8 +84,8 @@ li {
   width: 100%;
   border-radius: 8px;
   background-color: hsl(0, 0%, 20%);
-  font-weight: 600;
-  font-size: 14px;
+  font-weight: var(--bold);
+  font-size: var(--small-font);
   text-align: center;
   line-height: 45px;
 }
@@ -95,10 +93,24 @@ a {
   text-decoration: none;
   color: white;
 }
+
+/* Hover effects */
 li:hover {
   background-color: hsl(75, 94%, 57%);
   cursor: pointer;
 }
 li:hover a {
   color: black;
+}
+
+/* Add custom and reusable classes */
+.flex {
+  display: flex;
+}
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+.column {
+  flex-direction: column;
 }

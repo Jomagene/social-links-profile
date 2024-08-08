@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Live link](https://jomagene.github.io/social-links-profile/)
 
 ## My process
 
@@ -47,19 +47,26 @@ Users should be able to:
 
 Working on this project helped me refine my understanding of using custom fonts in a web project. I integrated multiple font weights and styles using the `@font-face` rule, which allowed me to include and use custom fonts directly from local files.
 
-Additionally, I gained more confidence in using Flexbox to create responsive layouts with centered and column-based alignment. Here’s a piece of CSS code I’m proud of:
+Additionally, I gained more confidence in using Flexbox to create responsive layouts with centered and column-based alignment.
+
+Here’s a piece of CSS code I’m proud of:
 
 ```css
-.flex-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@font-face {
+  font-family: "Inter";
+  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype"),
+    url("../static/Inter-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../static/Inter-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
 }
 ```
-
-````
-
-This snippet demonstrates how simple properties in Flexbox can achieve a clean, centered layout.
 
 ### Continued development
 
@@ -82,9 +89,4 @@ In future projects, I aim to further explore:
 
 ## Acknowledgments
 
-I’d like to thank the Frontend Mentor community for providing feedback and inspiration throughout this project. The articles and code snippets shared by other developers greatly contributed to my learning process.
-
-```
-
-```
-````
+I’d like to thank the Frontend Mentor community for providing feedback and inspiration throughout this journey. The articles and code snippets shared by other developers greatly contributed to my learning process.

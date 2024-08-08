@@ -44,6 +44,7 @@ main {
   align-items: center;
   gap: 28px;
   padding: 40px;
+  max-width: 90%;
 }
 .image-container {
   height: 88px;
@@ -77,11 +78,12 @@ h1 {
 }
 ul {
   gap: 16px;
+  width: 100%;
 }
 li {
   list-style: none;
   height: 45px;
-  width: 300px;
+  width: 100%;
   border-radius: 8px;
   background-color: hsl(0, 0%, 20%);
   font-weight: 600;

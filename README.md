@@ -42,39 +42,62 @@ Users should be able to:
 - Flexbox
 - Mobile-first workflow
 - Custom fonts using `@font-face`
+- Responsive design using Media Queries
 
 ### What I learned
 
-Working on this project helped me refine my understanding of using custom fonts in a web project. I integrated multiple font weights and styles using the `@font-face` rule, which allowed me to include and use custom fonts directly from local files.
+Working on this project helped me refine my understanding of several key web development concepts, including the use of custom fonts and responsive design techniques. Here's a breakdown of what I learned:
 
-Additionally, I gained more confidence in using Flexbox to create responsive layouts with centered and column-based alignment.
+1. **Custom Fonts:**
+   I integrated multiple font weights and styles using the `@font-face` rule, which allowed me to include and use custom fonts directly from local files. This approach gave me greater control over the typography used in the project.
 
-Here’s a piece of CSS code I’m proud of:
+   ```css
+   @font-face {
+     font-family: "Inter";
+     src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype"),
+       url("../static/Inter-Regular.ttf") format("truetype");
+     font-weight: 400;
+     font-style: normal;
+   }
 
-```css
-@font-face {
-  font-family: "Inter";
-  src: url("../assets/fonts/Inter-VariableFont_slnt,wght.ttf") format("truetype"),
-    url("../static/Inter-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
+   @font-face {
+     font-family: "Inter";
+     src: url("../static/Inter-Semibold.ttf") format("truetype");
+     font-weight: 600;
+     font-style: normal;
+   }
+   ```
 
-@font-face {
-  font-family: "Inter";
-  src: url("../static/Inter-Semibold.ttf") format("truetype");
-  font-weight: 600;
-  font-style: normal;
-}
-```
+2. **CSS Custom Properties:**
+   Using CSS custom properties (variables) helped streamline the styling process. For example, defining font sizes and weights as variables made it easy to maintain consistency throughout the project and quickly apply changes.
+
+   ```css
+   :root {
+     --small-font: 14px;
+     --large-font: 24px;
+     --regular: 400;
+     --bold: 600;
+   }
+   ```
+
+3. **Responsive Design:**
+   I employed a mobile-first approach, ensuring that the design is responsive and looks great on all screen sizes. Media queries were used to adjust the layout for larger screens, providing a consistent user experience across devices.
+
+   ```css
+   @media (min-width: 450px) {
+     li {
+       width: 305px;
+     }
+   }
+   ```
 
 ### Continued development
 
-In future projects, I aim to further explore:
+In future projects, I aim to continue refining my skills in:
 
-- **CSS Grid:** To enhance my layouts and create more complex, grid-based designs.
-- **Performance Optimization:** Focusing on optimizing web font loading strategies, such as using `font-display: swap` and serving fonts in WOFF2 format.
-- **Accessibility:** Ensuring that all interactive elements are fully accessible by improving focus states and keyboard navigation.
+- **CSS Grid:** Expanding my knowledge to create more complex, grid-based layouts.
+- **Performance Optimization:** Improving web font loading strategies, such as using `font-display: swap` and serving fonts in WOFF2 format for faster load times.
+- **Accessibility:** Ensuring all interactive elements are fully accessible by enhancing focus states and keyboard navigation.
 
 ### Useful resources
 

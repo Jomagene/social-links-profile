@@ -17,8 +17,8 @@
 /* Some variables */
 
 :root {
-  --small-font: 14px;
-  --large-font: 24px;
+  --small-font: 0.875rem;
+  --large-font: 1.5rem;
   --regular: 400;
   --bold: 600;
 }
@@ -30,7 +30,7 @@
 }
 body {
   background-color: hsl(0, 0%, 8%);
-  height: 100vh;
+  min-height: 100vh;
   color: white;
   font-family: "Inter", sans-serif;
   font-weight: var(--regular);
@@ -38,26 +38,27 @@ body {
 
 main {
   background-color: hsl(0, 0%, 12%);
-  border-radius: 12px;
+  border-radius: 0.75rem;
   align-items: center;
-  gap: 28px;
-  padding: 40px;
+  gap: 1.75rem;
+  padding: 2.5rem;
   max-width: 90%;
 }
 .image-container {
-  height: 88px;
-  width: 88px;
+  height: 5.5rem;
+  width: 5.5rem;
   border-radius: 50%;
   overflow: hidden;
 }
 img {
-  height: 86px;
+  height: 5.375rem;
 }
 .personal-info {
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 }
 h1 {
+  font-family: "Inter";
   font-size: var(--large-font);
   font-weight: var(--bold);
 }
@@ -68,30 +69,30 @@ h1 {
 }
 .link-container {
   align-items: center;
-  gap: 27px;
+  gap: 1.6875rem;
 }
 .link-container p {
   font-size: var(--small-font);
   color: rgb(208, 208, 208);
 }
 ul {
-  gap: 16px;
+  gap: 1rem;
   width: 100%;
 }
 li {
   list-style: none;
-  height: 45px;
+  height: 2.8125rem;
   width: 100%;
   border-radius: 8px;
   background-color: hsl(0, 0%, 20%);
   font-weight: var(--bold);
   font-size: var(--small-font);
   text-align: center;
-  line-height: 45px;
+  line-height: 2.8125rem;
 }
-@media (min-width: 450px) {
+@media (min-width: 28.125rem) {
   li {
-    width: 305px;
+    width: 19.0625rem;
   }
 }
 a {
